@@ -60,7 +60,7 @@ window.onload = function() {
         if (message.className === "chat-line__message") {
           let badges = message.getElementsByClassName("chat-line__username-container")[0];
           let author = message.getElementsByClassName("chat-author__display-name")[0];
-          author = author.getAttribute('data-a-user');
+          author = author.textContent;
           addUniteBtn(badges, author);
         }
       }
